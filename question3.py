@@ -22,7 +22,7 @@ def maxval(sequence):
     sorted_seq=sorted(sequence)
     window=2
     while (window<=len(sequence)):
-        tmain=main(window, max_sum_subarray(sorted_seq,window))
+        tmain=main_num(window, max_sum_subarray(sorted_seq,window))
         tmedian=median(window, sorted_seq)
         temp_result=tmain-tmedian
         if temp_result>result:
